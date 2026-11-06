@@ -24,7 +24,7 @@ meta:
 common:
 	# dependencies with other addons, a list of them separated by spaces 
 	# or use += in several lines
-	ADDON_DEPENDENCIES = ofxSvg
+	#ADDON_DEPENDENCIES = ofxSvg
 	
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
@@ -68,26 +68,27 @@ common:
 	# a specific platform
 	# ADDON_INCLUDES_EXCLUDE =
 
-linux64:
-	
-linux:
-	
-msys2:
-	
-	
-vs:
-	
-linuxarmv6l:
-	
-	
-linuxarmv7l:
-
-android/armeabi:	
-	
-android/armeabi-v7a:	
-
+	# Note: Addon parsing is automatic now
 osx:
+# 	ADDON_LIBS = libs/svgtiny/lib/macos/svgtiny.a
+# 	ADDON_LIBS += libs/libxml2/lib/macos/xml2.a
 
 ios:
+# 	ADDON_LIBS = libs/svgtiny/lib/ios/svgtiny.a
+# 	ADDON_LIBS += libs/libxml2/lib/ios/xml2.a
+	
+linux64:
+# 	ADDON_LIBS = libs/svgtiny/lib/linux64/libsvgtiny.a
+# 	ADDON_LIBS += libs/libxml2/lib/linux64/libxml2.a
 
+linuxarmv6l:
+# 	ADDON_LIBS = libs/svgtiny/lib/linuxarmv6l/libsvgtiny.a
+# 	ADDON_LIBS += libs/libxml2/lib/linuxarmv6l/libxml2.a
+
+linuxarmv7l:
+# 	ADDON_LIBS = libs/svgtiny/lib/linuxarmv7l/libsvgtiny.a
+# 	ADDON_LIBS += libs/libxml2/lib/linuxarmv7l/libxml2.a
+
+msys2:
+# 	ADDON_PKG_CONFIG_LIBRARIES = libxml-2.0
 
