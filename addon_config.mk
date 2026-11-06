@@ -66,8 +66,8 @@ common:
 	
 	# when parsing the file system looking for include paths exclude this for all or
 	# a specific platform
-    	# ADDON_INCLUDES_EXCLUDE =
-	
+	# ADDON_INCLUDES_EXCLUDE =
+
 linux64:
 	
 linux:
